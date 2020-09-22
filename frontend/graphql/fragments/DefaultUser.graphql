@@ -1,0 +1,5 @@
+fragment DefaultUser on User {
+  # Add notes about this and how it relates the the @ObjectTypes on the backend to notion
+  _id
+  username
+}

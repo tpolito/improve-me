@@ -1,0 +1,5 @@
+mutation AddGoal($title: String!, $desc: String!, $steps: [String!]!) {
+  addGoal(options: { title: $title, desc: $desc, steps: $steps }) {
+    ...DefaultGoalResponse
+  }
+}

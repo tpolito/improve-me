@@ -1,0 +1,13 @@
+# Dependicies
+**/node_modules
+
+# DS Store
+**/.DS_Store
+
+# enviroment configs
+**/.env
+
+# other
+**/dist
+**/.vscode
+**/.next

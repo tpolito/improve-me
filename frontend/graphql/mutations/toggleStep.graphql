@@ -1,0 +1,3 @@
+mutation ToggleStep($goalId: String!, $stepId: String!) {
+  toggleStep(options: { goalId: $goalId, stepId: $stepId })
+}

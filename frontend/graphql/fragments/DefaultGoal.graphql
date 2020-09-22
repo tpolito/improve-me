@@ -1,0 +1,15 @@
+fragment DefaultGoal on Goal {
+  _id
+  user_id
+  title
+  desc
+  createdAt
+  updatedAt
+  steps {
+    name
+    _id
+    completed
+    createdAt
+    updatedAt
+  }
+}

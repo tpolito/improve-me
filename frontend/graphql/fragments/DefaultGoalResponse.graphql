@@ -1,0 +1,8 @@
+fragment DefaultGoalResponse on GoalResponse {
+  errors {
+    ...DefaultGoalError
+  }
+  goal {
+    ...DefaultGoal
+  }
+}

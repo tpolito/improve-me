@@ -1,0 +1,12 @@
+API:
+    ☐ Implement Steps @created(20-09-15 15:57)
+        ☐ Designing them @created(20-09-15 15:58)
+        How do I track repeatable steps (log history/toggle them)
+        ☐ Implement them into the Goal Model @created(20-09-15 15:58)
+Frontend:
+    ☐ Create a "real home page" @created(20-09-15 15:58)
+    This would a splash page that users land on. It would be an SSR page, probaly one page scrolling, that would link to login -> app
+    ☐ Styling @created(20-09-15 16:05)
+    ✔ Figure out how to hanlde the urql-cache for handling posts @created(20-09-09 15:45) @done(20200915 15:57)
+    I think what I need to do is refresh the GetGoalsDocument cache on login, but I don't know how to do that.
+    I ended up adding a request policty to the GetGoals query, so that queryes the database every time is runs the GetGoals query. 
