@@ -8,7 +8,7 @@ The backend is built with NodeJS, graphql-yoga, and uses MongoDB.
 
 ## Frontend
 
-The frontend is built using NextJS (Typescript).
+The frontend is built using NextJS (Typescript) and AntDesign.
 
 ## Status
 
