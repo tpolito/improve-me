@@ -81,7 +81,9 @@ input ToggleStepInput {
 """User Model"""
 type User {
   _id: ID!
+  createdAt: DateTime!
   email: String!
+  updatedAt: DateTime!
   username: String!
 }
 

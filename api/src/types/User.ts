@@ -14,6 +14,14 @@ export class User {
   @Prop({ required: true, lowercase: true, unique: true })
   email: string;
 
+  @Field()
+  @Prop({ required: true, default: new Date() })
+  createdAt: Date;
+
+  @Field()
+  @Prop({ required: true, default: new Date() })
+  updatedAt: Date;
+
   // Not exposed to Graphql api
   // JUST a database value
   @Prop({ required: true })
