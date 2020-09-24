@@ -127,12 +127,14 @@ export class GoalResolver {
     const goal = await GoalModel.findById(options.goalId);
 
     // Get the step of the goal
-    // FIXME: .id method is not supported - https://mongoosejs.com/docs/subdocs.html#finding-a-subdocument
+    // HACK: .id method is not supported - https://mongoosejs.com/docs/subdocs.html#finding-a-subdocument
     // @ts-ignore
     const step = await goal?.steps.id(options.stepId);
 
     // Toggle completion of the goal
     step.completed = !step.completed;
+    // Updated the updatedAt field
+    step.updatedAt = new Date();
 
     // TODO: Add error checking
     // Save the goal
