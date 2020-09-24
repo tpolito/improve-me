@@ -2,6 +2,8 @@ API:
     ✔ Implement first version of Steps @created(20-09-15 15:58) @done(20200922 15:48)
     The first version of steps should be a basic implementation that is bascially just a glorifid todo list. You should be able to add steps and mark them as complete. In addtion I need to add them to the frontend. 
     Right now steps a sub-document on the goal object. A step contains a name, createdAt, and completed boolean.
+    ☐ Add ability to edit Goals @created(20-09-24 08:20)
+    This should be on the individual goals page, that expands once you head to the actual page for the goal.
     ☐ Implement second version of Steps @created(20-09-22 15:48)
     This might not be a entire rework, but instead added functionality. Looking implement daily 'resets' of goals, and a timeline of steps/goals completion.
     I need to look into the best way to strucutre data like this in MongoDB. I'm not sure how I want to go about it right now.
