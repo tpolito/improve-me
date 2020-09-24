@@ -21,7 +21,7 @@ const Index = () => {
       <PageLayout>
         <Row>
           <Col span={24} style={{ textAlign: 'center' }}>
-            <Title>Home Page</Title>
+            <Title>Home</Title>
           </Col>
         </Row>
       </PageLayout>
@@ -31,7 +31,9 @@ const Index = () => {
       <PageLayout>
         <Row>
           <Col span={24} style={{ textAlign: 'center' }}>
-            <Title>Hello {data?.me.username}</Title>
+            <Title style={{ textTransform: 'capitalize' }}>
+              Hello {data?.me.username} - Here Are Your Goals
+            </Title>
           </Col>
         </Row>
         <Goals />

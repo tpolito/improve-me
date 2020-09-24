@@ -1,5 +1,5 @@
 import React, { CSSProperties } from 'react';
-import { Card, Col, Checkbox } from 'antd';
+import { Card, Col, Checkbox, Popconfirm } from 'antd';
 import {
   useDeleteGoalMutation,
   useToggleStepMutation,
@@ -45,9 +45,15 @@ const GoalCard: React.FC<GoalCardProps> = ({ title, desc, goalId, steps }) => {
         title={title}
         style={cardStyles}
         extra={
-          <a onClick={() => handleDelete()} style={{ color: 'red' }}>
-            Delete
-          </a>
+          <Popconfirm
+            title="Are you sure?"
+            okText="Yes"
+            cancelText="No"
+            placement="bottom"
+            onConfirm={() => handleDelete()}
+          >
+            <a style={{ color: 'red' }}>Delete</a>
+          </Popconfirm>
         }
       >
         <p>{desc}</p>
