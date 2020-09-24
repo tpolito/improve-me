@@ -3,6 +3,13 @@ API:
     The first version of steps should be a basic implementation that is bascially just a glorifid todo list. You should be able to add steps and mark them as complete. In addtion I need to add them to the frontend. 
     Right now steps a sub-document on the goal object. A step contains a name, createdAt, and completed boolean.
     ☐ Implement second version of Steps @created(20-09-22 15:48)
+    This might not be a entire rework, but instead added functionality. Looking implement daily 'resets' of goals, and a timeline of steps/goals completion.
+    I need to look into the best way to strucutre data like this in MongoDB. I'm not sure how I want to go about it right now.
+    ☐ Add 3rd Party logins @created(20-09-22 18:28)
+    Not sure how to do this, might look into PassportJS
+        ☐ Google @created(20-09-22 18:29)
+        ☐ Github @created(20-09-22 18:29)
+    
 Frontend:
     ☐ Create a "real home page" @created(20-09-15 15:58)
     This would a splash page that users land on. It would be an SSR page, probaly one page scrolling, that would link to login -> app
@@ -10,4 +17,5 @@ Frontend:
     Right now the site feels pretty bland, just basic antdesign stuff. I need to come up with a better idea for the design of the site as a whole.
     ✔ Figure out how to hanlde the urql-cache for handling posts @created(20-09-09 15:45) @done(20200915 15:57)
     I think what I need to do is refresh the GetGoalsDocument cache on login, but I don't know how to do that.
-    I ended up adding a request policty to the GetGoals query, so that queryes the database every time is runs the GetGoals query. 
+    ☐ I ended up adding a request policty to the GetGoals query, so that queryes the database every time is runs the GetGoals query.☐ Add fake "premium" version @created(20-09-22 18:29)
+    I think I want to implement this so that there is a boolean in the user settings where you can toggle premium mode. This way I can show the different states of the app.
