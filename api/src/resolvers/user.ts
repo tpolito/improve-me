@@ -107,6 +107,7 @@ export class UserResolver {
     }
 
     user.password = await argon2.hash(newPassword);
+    user.updatedAt = new Date();
     user.save();
 
     await req.redisClient.del(key);
