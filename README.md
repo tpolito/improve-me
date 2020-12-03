@@ -12,4 +12,4 @@ The frontend is built using NextJS (Typescript) and AntDesign.
 
 ## Status
 
-Still very early on in development. Working on core features and building the API. There is currently not hosted demo for the project, but I hope to have one up and running by mid October.
+Still very early on in development. Working on core features and building the API. I recently accepting a new full time position, as such development has slowed.
