@@ -1,7 +1,6 @@
 # Improve Me
 
-This is a self improvment app built to showcase my development skills.
-
+This is a self improvment app.
 ## Status
 
 Still very early on in development. Working on core features and building out API and database structure. I recently accepting a new full time position, as such development has slowed.
